@@ -112,10 +112,6 @@ h2 {
     padding: 48px 0;
 }
 
-.carta figure, .carta div, .comparacao article {
-    flex: 1;
-    max-width: 0;
-}
 
 figure {
     margin: 0
@@ -155,6 +151,54 @@ footer {
     padding: 24px 0;
 }
 
+
+.comparacao details,
+.comparacao summary,
+.comparacao details article {
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.comparacao summary {
+    display: block;
+    margin-bottom: 12px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: auto;
+    margin: 0;
+    background: #f3efe6;
+    color: #244137;
+    font-weight: bold;
+}
+
+.comparacao {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: start;
+    gap: 24px;
+    position: relative;
+    padding-top: 64px;
+}
+
+#desafio {
+    margin-top: 24px;
+    padding-top: 16px;
+    border-top: 1px solid #f3efe6;
+}
+
+#desafio label {
+    display: block;
+    margin-bottom: 6px;
+}
+
+#palpite {
+    width: 60px;
+    padding: 10px;
+    margin: 0 8px 8px 0;
+    font: inherit
+}
+
 @media (max-width: 700px) {
     header, nav {
         justify-content: center;
@@ -170,5 +214,9 @@ footer {
     }
     .carta {
         padding: 24px 0;
+    }
+
+    .comparacao {
+        grid-template-columns: 1fr;
     }
 }

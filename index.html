@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Até a Próxima Colheita</title>
     <link rel="stylesheet" href="css/style.css">
-    <script src="js/scriptjs"></script>
+    <script src="js/scriptjs" defer></script>
 </head>
 <body>
     <header class="limite">
@@ -51,14 +51,24 @@
                         <p><strong>Grupo A: 8 medidas - Grupo B: 12 medidas</strong></p>
                         <p class="aviso">Falta cevada para o Grupo B a partir do dia 7.</p>
                     </article>
-                    <article id="divisao-ajustada">
-                        <h3>Divisão ajustada</h3>
-                        <p><strong>Grupo A: 4 medidas - Grupo B: 16 medidas</strong></p>
-                        <p>Com o mesmo estoque, os dois grupos chegam ao dia 8.</p>
-                    </article>
+                    <details id="divisao-ajustada">
+                        <summary class="botao" id="ver-ajuste">Ver divisão ajustada</summary>
+                        <article>
+                            <h3>Divisão ajustada</h3>
+                            <p><strong>Grupo A: 4 medidas - Grupo B: 16 medidas</strong></p>
+                            <p>Com o mesmo estoque, os dois grupos chegam ao dia 8.</p>
+                        </article>
+                    </details>
                 </div>
-                <button class="botao" id="ver-ajuste" type="button" aria-controls="divisao-ajustada" aria-expanded="false" hidden>Ver divisão ajustada</button>
                 <p><small>Exemplo didático com valores ilustrativos.</small></p>
+                <form id="desafio">
+                    <h3>Em que dia a cevada vai faltar?</h3>
+                    <p>O Grupo B começa sem reserva, recebe 14 medidas e usa 2 por dia.</p>
+                    <label for="palpite">Dia em que começa a falta</label>
+                    <input id="palpite" type="number" min="1" max="8" required>
+                    <button class="botao" type="submit">Conferir resposta</button>
+                    <p id="resposta" aria-live="polite"></p>
+                </form>
             </div>
         </section>
         <script src="js/script.js"></script>
