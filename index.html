@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Até a Próxima Colheita</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="js/scriptjs"></script>
+</head>
+<body>
+    <header class="limite">
+        <a class="marca" href="#inicio">
+            <img src="imagens/logo-cevada.png" alt="">
+            Até a Próxima Colheita
+        </a>
+        <nav aria-label="Navegação principal">
+            <a href="#carta">A carta</a>
+            <a href="#demonstração">Demonstração</a>
+            <a href="#fontes">Fontes</a>
+        </nav>
+    </header>
+    <main>
+        <section class="abertura" id="inicio">
+            <div class="limite">
+                <p class="local">Tebas - Médio Imério</p>
+                <h1>A conta fecha. Mas quem fica sem cevada primeiro?</h1>
+                <a class="botao" href="#demonstracao">Ver a demonstração</a>
+            </div>
+            <img class="banner" src="imagens/Pilar de arenito às margens do Nilo.png" alt="">
+        </section>
+        <div class="friso" aria-hidden="true"></div>
+        <section class="limite carta" id="carta">
+            <figure>
+                <img src="imagens/ilustracao-carta-heqanakht.webp" alt="">
+                <figcaption>Ilustração inspirada na Carta II de Heqanakht</figcaption>
+            </figure>
+            <div>
+                <h2>O que a carta registrou</h2>
+                <p>Após uma colheita ruim, Heqanakht registrou quanto de cevada seria distribuído. Algumas porções também cobriam os dependentese quem recebia o grão.</p>
+                <p>Nosso projeto imagina uma ferramenta para prever quanto tempo essas provisões durariam antes de decidir a entrega.</p>
+            </div>
+        </section>
+        <div class="friso" aria-hidden="true"></div>
+        <section class="demonstracao" id="demonstracao">
+            <div class="limite">
+                <h2>Antes de entregar a cevada</h2>
+                <p>Há 20 medidas disponíveis e faltam 8 dias para a próxima entrega.</p>
+                <div class="comparacao">
+                    <article>
+                        <h3>Divisão inicial</h3>
+                        <p><strong>Grupo A: 8 medidas - Grupo B: 12 medidas</strong></p>
+                        <p class="aviso">Falta cevada para o Grupo B a partir do dia 7.</p>
+                    </article>
+                    <article id="divisao-ajustada">
+                        <h3>Divisão ajustada</h3>
+                        <p><strong>Grupo A: 4 medidas - Grupo B: 16 medidas</strong></p>
+                        <p>Com o mesmo estoque, os dois grupos chegam ao dia 8.</p>
+                    </article>
+                </div>
+                <button class="botao" id="ver-ajuste" type="button" aria-controls="divisao-ajustada" aria-expanded="false" hidden>Ver divisão ajustada</button>
+                <p><small>Exemplo didático com valores ilustrativos.</small></p>
+            </div>
+        </section>
+        <script src="js/script.js"></script>
+    </main>
+    <footer class="limite" id="fontes">
+        <h2>Fontes</h2>
+        <p>The Metropolitan Museum of Art</p>
+        <ul>
+            <li>
+                <a href="https://www.metmuseum.org/art/collection/search/545446">Carta II de Heqanakht</a>
+            </li>
+            <li>
+                <a href="https://www.metmuseum.org/art/collection/search/545281">Modelo de celeiro de Meketre</a>
+            </li>
+        </ul>
+    </footer>
+</body>
+</html>
